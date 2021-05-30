@@ -63,6 +63,9 @@
   background-size: cover;
   margin-bottom: 100px;
   padding-top: 125px; }
+  @media screen and (max-width: 823px) {
+    .background {
+      height: 1000px; } }
   @media screen and (max-width: 540px) {
     .background {
       height: 900px; } }

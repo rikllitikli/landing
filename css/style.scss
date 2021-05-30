@@ -81,6 +81,9 @@
   background-size: cover;
   margin-bottom: 100px;
   padding-top: 125px;
+  @include max-screen(823px){
+    height: 1000px;
+  }
   @include max-screen(540px){
     height: 900px;
   }
