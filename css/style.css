@@ -104,4 +104,50 @@
     padding: 8px 0;
     border: none; }
 
+.social img {
+  width: 100%;
+  -webkit-box-shadow: 0px 5px 6px -3px rgba(34, 60, 80, 0.75);
+  -moz-box-shadow: 0px 5px 6px -3px rgba(34, 60, 80, 0.75);
+  box-shadow: 0px 5px 6px -3px rgba(34, 60, 80, 0.75); }
+
+@media screen and (max-width: 750px) {
+  .google {
+    margin-bottom: 30px; } }
+.form, .form_g {
+  background-color: rgba(57, 88, 153, 0.85);
+  padding: 30px 30px;
+  margin-bottom: 30px; }
+
+.form_g {
+  background-color: rgba(245, 242, 242, 0.75); }
+
+.form_g .choice:nth-child(2) {
+  margin-bottom: 0; }
+
+.form .choice:nth-child(2), .form_g .choice_g:nth-child(2) {
+  margin-bottom: 0; }
+
+.choice, .choice_g {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  color: white;
+  font-size: 14px;
+  font-weight: 300; }
+
+.choice_g {
+  color: #033831; }
+
+.fb_buton, .googole_buton {
+  background-color: #2b8e81;
+  color: white;
+  width: 100%;
+  padding: 22px 0;
+  font-size: 16px;
+  border: solid 2px #2b8e81; }
+
+.googole_buton {
+  background-color: white;
+  color: #2b8e81; }
+
 /*# sourceMappingURL=style.css.map */
