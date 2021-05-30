@@ -6,38 +6,58 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header>
-    <div class="container">
-        <a href="#" class="image">
-        <img src="img/logo2.png">
-        </a>
-    <ul>
-        <li> <a href="#"> +380 (ХХ) (ХХХ) (ХХ) (ХХ) <span class="phone"> <i class="fas fa-phone-square-alt"></i> </span> </a> </li>
-        <li> <a href="#"> +380 (ХХ) (ХХХ) (ХХ) (ХХ) <span class="viber"> <i class="fab fa-viber"></i> </span> </a> </li>
-        <li> <a href="#" class="active"> Оформить реламу в ФБ </a> </li>
-        <li> <a href="#" class="active"> Оформить реламу в Google </a> </li>
-    </ul>
-    </div>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"> <img src="img/logo2.png" alt=""/></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">+380 (ХХ) (ХХХ) (ХХ) (ХХ) <span class="phone"> <i class="fas fa-phone-square-alt"></i> </span></a></li>
+                    <li><a href="#">+380 (ХХ) (ХХХ) (ХХ) (ХХ) <span class="viber"> <i class="fab fa-viber"></i> </span> </a></li>
+                    <li><a href="#" class="active">Оформить реламу в ФБ</a></li>
+                    <li><a href="#" class="active">Оформить реламу в ФБ</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
 </header>
-<section class="section">
-    <div class="flex_container">
-        <div class="image_container">
-            <img src="img/Слой 7.jpg" />
-        </div>
-        <div>
-            <h1> Зарабатывайте  больше! </h1>
-            <p> Каждая минута забирает Ваши деньги.
-                Время рекламы увеличивает </p>
-            <form name="banner" action="" method="post">
-                <input type="email" placeholder="email">
-            </form>
+<section class="background">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <img src="img/Слой 7.jpg" alt=""/>
+            </div>
+            <div class="col-md-5">
+                <h1> Зарабатывайте  больше!</h1>
+                <p> Каждая минута забирает Ваши деньги.
+                    Время рекламы увеличивает </p>
+                <form name="banner" action="" method="post">
+                    <input type="email" placeholder="email" class="email">
+                    <button> Подать заявку </button>
+                </form>
+            </div>
         </div>
     </div>
 </section>
-
-</body>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/421ca2af13.js" crossorigin="anonymous"></script>
+</body>
 </html>

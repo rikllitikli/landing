@@ -3,81 +3,105 @@
   margin: 0;
   padding: 0; }
 
-header {
+.navbar-default {
   position: absolute;
   width: 100%;
-  padding-top: 27px;
+  background-image: none;
   background-color: white;
-  margin-bottom: 60px; }
-  header .container {
-    max-width: 1049px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between; }
-    header .container .image {
-      position: relative;
-      bottom: 5px; }
-    header .container ul {
-      list-style: none; }
-      header .container ul li {
-        display: inline-block;
-        margin-left: 30px; }
-        header .container ul li a {
-          font-size: 14px;
-          line-height: 24px;
-          color: #033831;
-          display: inline-block;
-          text-decoration: none; }
-          header .container ul li a .phone {
-            font-size: 16px;
-            color: #26e07f; }
-          header .container ul li a .viber {
-            font-size: 16px;
-            color: #6435b6;
-            font-weight: bold; }
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin-bottom: 0;
+  z-index: 10; }
+  .navbar-default .phone {
+    font-size: 16px;
+    color: #26e07f; }
+  .navbar-default .viber {
+    font-size: 16px;
+    color: #6435b6;
+    font-weight: bold; }
 
-header ul li .active:after {
+@media screen and (max-width: 767px) {
+  .navbar-brand > img {
+    position: relative;
+    bottom: 11px; } }
+
+.navbar-default .navbar-nav > li > a {
+  color: #033831;
+  font-size: 14px;
+  padding-top: 27px;
+  padding-bottom: 0; }
+  @media screen and (max-width: 992px) {
+    .navbar-default .navbar-nav > li > a {
+      font-size: 11px; }
+      .navbar-default .navbar-nav > li > a .phone {
+        font-size: 12px; }
+      .navbar-default .navbar-nav > li > a .viber {
+        font-size: 12px; } }
+  @media screen and (max-width: 750px) {
+    .navbar-default .navbar-nav > li > a {
+      font-size: 14px;
+      text-align: center; } }
+
+.navbar-default .navbar-nav > li > .active:after {
   display: block;
   content: "";
   width: 100%;
-  height: 2px;
+  height: 3px;
   background-color: transparent;
   margin-top: 26px; }
 
-header ul li .active:hover:after {
-  display: block;
-  content: "";
-  width: 100%;
-  height: 2px;
+.navbar-default .navbar-nav > li > .active:hover:after {
   background-color: #2ea797;
-  margin-top: 26px;
   transition: 0.3s; }
 
-.section {
+.background {
   background-image: url("../img/Прямоугольник 2.jpg");
   width: 100%;
   height: 100vh;
-  background-position: center center;
+  background-position: center top;
   background-size: cover;
-  margin-bottom: 100px; }
-
-.flex_container {
-  display: flex;
-  justify-content: space-between;
-  padding: 125px 67px; }
-  .flex_container .image_container {
-    margin-right: 30px; }
-  .flex_container h1 {
+  margin-bottom: 100px;
+  padding-top: 125px; }
+  @media screen and (max-width: 540px) {
+    .background {
+      height: 900px; } }
+  @media screen and (max-width: 414px) {
+    .background {
+      height: 775px; } }
+  .background img {
+    width: 100%; }
+  .background h1 {
     font-size: 60px;
     color: #033831;
     margin-bottom: 30px;
     font-weight: bold; }
-  .flex_container p {
+    @media screen and (max-width: 414px) {
+      .background h1 {
+        font-size: 40px; } }
+    @media screen and (max-width: 320px) {
+      .background h1 {
+        font-size: 35px; } }
+  .background p {
     color: #033831;
     font-size: 14px;
     margin-bottom: 43px;
     line-height: 30px;
     max-width: 257px;
     font-weight: normal; }
+  .background .email {
+    width: 254px;
+    padding: 8px 10px;
+    border: solid 2px #2b8e81;
+    display: block;
+    margin-bottom: 20px; }
+  .background button {
+    background-color: #2b8e81;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    width: 254px;
+    padding: 8px 0;
+    border: none; }
 
 /*# sourceMappingURL=style.css.map */

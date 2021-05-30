@@ -3,87 +3,104 @@
   padding: 0;
 }
 
-header {
-  position: absolute;
-  width: 100%;
-  padding-top: 27px;
-  background-color: white;
-  margin-bottom: 60px;
-  .container {
-    max-width: 1049px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    .image {
-      position: relative;
-      bottom: 5px;
-    }
-  ul {
-    list-style: none;
-    li {
-      display: inline-block;
-      margin-left: 30px;
-      a {
-        font-size: 14px;
-        line-height: 24px;
-        color: #033831;
-        display: inline-block;
-        text-decoration: none;
-        .phone{
-          font-size: 16px;
-          color: #26e07f;
-        }
-        .viber {
-          font-size: 16px;
-          color: #6435b6;
-          font-weight: bold;
-        }
-      }
-    }
-  }
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
   }
 }
 
-header ul li .active:after {
+.navbar-default {
+  position: absolute;
+  width: 100%;
+  background-image: none;
+  background-color: white;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin-bottom: 0;
+ z-index: 10;
+  .phone{
+    font-size: 16px;
+    color: #26e07f;
+  }
+  .viber {
+    font-size: 16px;
+    color: #6435b6;
+    font-weight: bold;
+  }
+}
+
+
+.navbar-brand > img {
+  @include max-screen(767px) {
+    position: relative;
+    bottom: 11px;
+  }
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #033831;
+  font-size: 14px;
+  padding-top: 27px;
+  padding-bottom: 0;
+  @include max-screen(992px) {
+    font-size: 11px;
+    .phone{
+      font-size: 12px;
+    }
+    .viber {
+      font-size: 12px;
+    }
+  }
+  @include max-screen(750px) {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+.navbar-default .navbar-nav > li > .active:after {
   display: block;
   content: "";
   width: 100%;
-  height: 2px;
+  height: 3px;
   background-color: transparent;
   margin-top: 26px;
 }
 
-header ul li .active:hover:after{
-  display: block;
-  content: "";
-  width: 100%;
-  height: 2px;
+.navbar-default .navbar-nav > li > .active:hover:after {
   background-color: #2ea797;
-  margin-top: 26px;
   transition: 0.3s;
 }
 
-.section {
+
+.background {
   background-image: url("../img/Прямоугольник 2.jpg");
   width: 100%;
   height: 100vh;
-  background-position: center center;
+  background-position: center top;
   background-size: cover;
   margin-bottom: 100px;
-}
-
-.flex_container {
-  display: flex;
-  justify-content: space-between;
-  padding: 125px 67px;
-  .image_container {
-    margin-right: 30px;
+  padding-top: 125px;
+  @include max-screen(540px){
+    height: 900px;
+  }
+  @include max-screen(414px) {
+    height: 775px;
+  }
+  img {
+    width: 100%;
   }
   h1 {
     font-size: 60px;
     color: #033831;
     margin-bottom: 30px;
     font-weight: bold;
+    @include max-screen(414px) {
+      font-size: 40px;
+    }
+    @include max-screen(320px) {
+      font-size: 35px;
+    }
   }
   p {
     color: #033831;
@@ -93,6 +110,23 @@ header ul li .active:hover:after{
     max-width: 257px;
     font-weight: normal;
   }
+  .email{
+    width: 254px;
+    padding: 8px 10px;
+    border: solid 2px #2b8e81;
+    display: block;
+    margin-bottom: 20px;
+  }
+  button {
+    background-color: #2b8e81;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    width: 254px;
+    padding: 8px 0;
+    border: none;
+  }
 }
+
 
 
