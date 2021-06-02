@@ -82,12 +82,12 @@
     padding-top: 15px;
   }
   @include max-screen(540px){
-    font-size: 9px;
+    font-size: 11px;
   }
   li{
     margin-right: 30px;
-    @include max-screen(320px){
-      margin-right: 20px;
+    @include max-screen(414px){
+      margin-right: 10px;
     }
     @include max-screen(992px){
       .phone{

@@ -68,12 +68,12 @@
       padding-top: 15px; } }
   @media screen and (max-width: 540px) {
     .tel {
-      font-size: 9px; } }
+      font-size: 11px; } }
   .tel li {
     margin-right: 30px; }
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 414px) {
       .tel li {
-        margin-right: 20px; } }
+        margin-right: 10px; } }
     @media screen and (max-width: 992px) {
       .tel li .phone {
         font-size: 10px; }
