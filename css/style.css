@@ -27,6 +27,11 @@
     .navbar-brand img {
       width: 70%; } }
 
+.navbar-brand > img {
+  display: inline-block;
+  position: relative;
+  bottom: 5px; }
+
 .navbar-default .navbar-nav > li > a {
   color: #033831;
   font-size: 14px;
