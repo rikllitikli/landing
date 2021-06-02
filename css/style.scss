@@ -31,7 +31,11 @@
 }
 
 
-.navbar-brand > img {
+.navbar-brand {
+  @include max-screen(750px){
+    padding: 5px 10px;
+  }
+
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -56,6 +60,9 @@
   background-color: transparent;
   margin-top: 26px;
 }
+.navbar-toggle {
+  border-radius: 0;
+}
 
 .tel {
   display: flex;
@@ -72,6 +79,7 @@
   @include max-screen(750px){
     font-size: 14px;
     text-align: center;
+    padding-top: 15px;
   }
   @include max-screen(540px){
     font-size: 9px;

@@ -21,6 +21,10 @@
     color: #6435b6;
     font-weight: bold; }
 
+@media screen and (max-width: 750px) {
+  .navbar-brand {
+    padding: 5px 10px; } }
+
 .navbar-default .navbar-nav > li > a {
   color: #033831;
   font-size: 14px;
@@ -42,6 +46,9 @@
   background-color: transparent;
   margin-top: 26px; }
 
+.navbar-toggle {
+  border-radius: 0; }
+
 .tel {
   display: flex;
   flex-direction: row;
@@ -57,7 +64,8 @@
   @media screen and (max-width: 750px) {
     .tel {
       font-size: 14px;
-      text-align: center; } }
+      text-align: center;
+      padding-top: 15px; } }
   @media screen and (max-width: 540px) {
     .tel {
       font-size: 9px; } }
