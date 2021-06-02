@@ -31,6 +31,15 @@
   display: inline-block;
   position: relative;
   bottom: 5px; }
+  @media screen and (max-width: 414px) {
+    .navbar-brand > img {
+      bottom: 0; } }
+  @media screen and (max-width: 360px) {
+    .navbar-brand > img {
+      bottom: 5px; } }
+  @media screen and (max-width: 320px) {
+    .navbar-brand > img {
+      bottom: 0; } }
 
 .navbar-default .navbar-nav > li > a {
   color: #033831;
@@ -114,34 +123,41 @@
       height: 775px; } }
   .background img {
     width: 100%; }
-  .background h1 {
+  @media screen and (max-width: 823px) {
+    .background .call {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center; } }
+  .background .call h1 {
     font-size: 60px;
     color: #033831;
     margin-bottom: 30px;
     font-weight: bold; }
     @media screen and (max-width: 1024px) {
-      .background h1 {
+      .background .call h1 {
         font-size: 50px; } }
     @media screen and (max-width: 414px) {
-      .background h1 {
+      .background .call h1 {
         font-size: 40px; } }
     @media screen and (max-width: 320px) {
-      .background h1 {
+      .background .call h1 {
         font-size: 35px; } }
-  .background p {
+  .background .call p {
     color: #033831;
     font-size: 14px;
     margin-bottom: 43px;
     line-height: 30px;
     max-width: 257px;
     font-weight: normal; }
-  .background .email {
+  .background .call .email {
     width: 254px;
     padding: 8px 10px;
     border: solid 2px #2b8e81;
     display: block;
     margin-bottom: 20px; }
-  .background button {
+  .background .call button {
     background-color: #2b8e81;
     color: white;
     font-size: 14px;
