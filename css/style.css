@@ -21,11 +21,6 @@
     color: #6435b6;
     font-weight: bold; }
 
-@media screen and (max-width: 767px) {
-  .navbar-brand > img {
-    position: relative;
-    bottom: 11px; } }
-
 .navbar-default .navbar-nav > li > a {
   color: #033831;
   font-size: 14px;
@@ -33,11 +28,7 @@
   padding-bottom: 0; }
   @media screen and (max-width: 992px) {
     .navbar-default .navbar-nav > li > a {
-      font-size: 11px; }
-      .navbar-default .navbar-nav > li > a .phone {
-        font-size: 12px; }
-      .navbar-default .navbar-nav > li > a .viber {
-        font-size: 12px; } }
+      font-size: 10px; } }
   @media screen and (max-width: 750px) {
     .navbar-default .navbar-nav > li > a {
       font-size: 14px;
@@ -50,6 +41,36 @@
   height: 3px;
   background-color: transparent;
   margin-top: 26px; }
+
+.tel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 30px 30px 0;
+  list-style: none;
+  font-size: 14px; }
+  @media screen and (max-width: 992px) {
+    .tel {
+      padding-right: 0;
+      font-size: 10px; } }
+  @media screen and (max-width: 750px) {
+    .tel {
+      font-size: 14px;
+      text-align: center; } }
+  @media screen and (max-width: 540px) {
+    .tel {
+      font-size: 9px; } }
+  .tel li {
+    margin-right: 30px; }
+    @media screen and (max-width: 320px) {
+      .tel li {
+        margin-right: 20px; } }
+    @media screen and (max-width: 992px) {
+      .tel li .phone {
+        font-size: 10px; }
+      .tel li .viber {
+        font-size: 10px; } }
 
 .navbar-default .navbar-nav > li > .active:hover:after {
   background-color: #2ea797;
@@ -79,6 +100,9 @@
     color: #033831;
     margin-bottom: 30px;
     font-weight: bold; }
+    @media screen and (max-width: 1024px) {
+      .background h1 {
+        font-size: 50px; } }
     @media screen and (max-width: 414px) {
       .background h1 {
         font-size: 40px; } }
@@ -201,7 +225,8 @@
 
 footer {
   background-color: #2b8e81;
-  padding: 30px 113px 116px; }
+  padding-top: 30px;
+  padding-bottom: 116px; }
   @media screen and (max-width: 414px) {
     footer {
       padding: 30px 0 116px; } }
