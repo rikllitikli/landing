@@ -72,6 +72,9 @@
   padding: 27px 25px 0;
   list-style: none;
   font-size: 14px; }
+  @media screen and (max-width: 600px) {
+    .tel {
+      display: block; } }
   @media screen and (max-width: 992px) {
     .tel {
       padding-right: 0;
@@ -214,7 +217,7 @@
   background-color: white;
   color: #2b8e81; }
 
-.coments_carousel {
+.coments_owl {
   max-width: 1140px;
   margin: auto; }
 
@@ -259,8 +262,7 @@
 
 footer {
   background-color: #2b8e81;
-  padding-top: 30px;
-  padding-bottom: 116px; }
+  padding: 30px 0 116px; }
   @media screen and (max-width: 414px) {
     footer {
       padding: 30px 0 116px; } }
@@ -279,6 +281,44 @@ footer {
     font-weight: bold;
     width: 100%;
     padding: 8px 0;
-    border: solid 2px white; }
+    border: solid 2px white;
+    margin-bottom: 15px; }
+
+.corp {
+  position: relative;
+  bottom: 180px; }
+  @media screen and (max-width: 992px) {
+    .corp {
+      position: relative;
+      bottom: 0; } }
+
+.owl-carousel .owl-nav button.owl-prev {
+  display: none; }
+
+.owl-carousel .owl-nav button.owl-next {
+  display: none; }
+
+.owl-drag {
+  text-align: center; }
+
+.owl-dots {
+  width: 100%;
+  position: absolute;
+  bottom: 60px; }
+
+.owl-dot span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #2b8e81;
+  border-radius: 100%;
+  margin-right: 10px; }
+
+.owl-dot.active span {
+  background-color: white;
+  border: solid 2px #2b8e81;
+  width: 15px;
+  height: 15px;
+  transition: 0.3s; }
 
 /*# sourceMappingURL=style.css.map */

@@ -89,6 +89,9 @@
   padding: 27px 25px 0;
   list-style: none;
   font-size: 14px;
+  @include max-screen(600px){
+    display: block;
+  }
   @include max-screen(992px){
     padding-right: 0;
     padding-top: 30px;
@@ -265,11 +268,10 @@
 }
 
 
-.coments_carousel {
+.coments_owl{
   max-width: 1140px;
   margin: auto;
 }
-
 
 .coments {
   background-color: #f5f2f2;
@@ -319,8 +321,7 @@
 
 footer {
   background-color: #2b8e81;
-  padding-top: 30px;
-  padding-bottom: 116px;
+  padding: 30px 0 116px;
   @include max-screen(414px){
     padding: 30px 0 116px;
   }
@@ -342,5 +343,53 @@ footer {
     width: 100%;
     padding: 8px 0;
     border: solid 2px white;
+    margin-bottom: 15px;
   }
+}
+
+.corp {
+  position: relative;
+  bottom: 180px;
+  @include max-screen(992px){
+    position: relative;
+    bottom: 0;
+  }
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+  display: none;
+}
+
+.owl-carousel .owl-nav button.owl-next{
+  display: none;
+}
+
+.owl-drag {
+  text-align: center;
+}
+
+.owl-dots {
+  width: 100%;
+  position: absolute;
+  bottom: 60px;
+}
+
+
+.owl-dot span{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #2b8e81;
+  border-radius: 100%;
+  margin-right: 10px;
+
+
+}
+
+.owl-dot.active span {
+  background-color: white;
+  border: solid 2px #2b8e81;
+  width: 15px;
+  height: 15px;
+  transition: 0.3s;
 }
